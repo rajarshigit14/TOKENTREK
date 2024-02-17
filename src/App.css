@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: gold;
+}
+/* .container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+   .container .sidebar{
+  width: 30%; 
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center"; 
+  margin-top: 25;
+  border-right: "2px solid grey";
+
+}    */
+
+ @media screen and (min-width: 601px) and (max-width: 900px){ 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    margin-top: 0;
+    padding: 20;
+    padding-top:0;       
+  }
+
+  .container .sidebar {
+    width: 100%;
+    margin: auto;
+}
+.container .sidebar .coinImg{
+  margin: auto;
+} 
+   .marketData {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width:600px) {
+  .marketData {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+@media screen and (min-width:0px) {
+  .marketData {
+    align-items: start;
+  }
+}
